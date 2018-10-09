@@ -1,0 +1,7 @@
+#Simple blockchain script to:
+
+1. create block
+2. find proof
+3. check POW
+4. create blockchain
+5. return some data in json
