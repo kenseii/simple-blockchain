@@ -5,3 +5,5 @@
 3. check POW
 4. create blockchain
 5. return some data in json
+
+Require only flask to run it
