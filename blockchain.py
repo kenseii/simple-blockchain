@@ -162,6 +162,22 @@ def get_chain():
 
 """
 
+Checking if the chain is valid via api request
+
+"""
+
+@app.route('/is_valid',methods=['GET'])
+def is_valid():
+    is_valid = blockchain.is_chain_valid(blockchain.chain)
+    if is_valid:
+        response = {'message':'The chain is valid'}
+    else:
+        response = {'message':'Abunai, the chain is invalid!!!'}
+        
+    return jsonify(response), 200
+
+"""
+
 Run the flask app
 
 """
